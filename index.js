@@ -14,9 +14,9 @@ app.get('/hello', (req, res) => {
 })
 
 app.get('/', (req, res) => {
-    res.json(` 
+    res.json(
     <h1> hello there </h1>
-    `)
+    )
 })
 
 const port = process.env.PORT || 9000
