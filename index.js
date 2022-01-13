@@ -13,6 +13,12 @@ app.get('/hello', (req, res) => {
     res.json({ message: "fahook"})
 })
 
+app.get('/', (req, res) => {
+    res.json(` 
+    <h1> hello there </h1>
+    `)
+})
+
 const port = process.env.PORT || 9000
 
 app.listen(port, () => {
